@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const Todoform = ({ props }) => {
   const { todoList, setTodoList, count, setCount } = props;
-  console.log(todoList);
   const [title, setTitle] = useState("");
   function handleAdd() {
     let newCount = count + 1;

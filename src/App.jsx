@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ThemeContext from "./utils/ThemeContext";
 import Body from "./Todo/Body";
+import TodoWithReducer from "./useReducer";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <ThemeContext.Provider value={{ theme, setTheme }}>
-        <Body />
+        <TodoWithReducer />
       </ThemeContext.Provider>
     </>
   );

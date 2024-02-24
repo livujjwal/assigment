@@ -5,7 +5,6 @@ import TodoItem from "./TodoItem";
 const Body = () => {
   const [todoList, setTodoList] = useState([]);
   const [count, setCount] = useState(0);
-  console.log(todoList, count);
   return (
     <div className="m-2 p-2">
       <Todoform props={{ todoList, setTodoList, count, setCount }} />

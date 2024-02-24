@@ -14,7 +14,6 @@ const TodoItem = ({ props }) => {
       return todo;
     });
     setTodoList(newTodo);
-    console.log(todoList);
   }
   function handleLike(todoId) {
     const newTodo = todoList.map((todo) => {
@@ -24,7 +23,6 @@ const TodoItem = ({ props }) => {
       return todo;
     });
     setTodoList(newTodo);
-    console.log(todoList);
   }
   return (
     <div>
